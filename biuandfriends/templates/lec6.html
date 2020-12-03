@@ -7,13 +7,13 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Style the header */
 .header {
   grid-area: header;
-  background-color: salmon;
+  background-color:#BCE6EB;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -24,7 +24,7 @@ body {
   display: grid;
   grid-template-areas: 
     'header header header header header header' 
-    'left middle middle middle middle right' 
+    'left middle middle middle middle middle' 
     'footer footer footer footer footer footer';
   /* grid-column-gap: 10px; - if you want gap between the columns */
 } 
@@ -46,9 +46,9 @@ body {
 }
 
 /* Style the right column */
-.right {
+/*.right {
   grid-area: right;
-}
+} /*
 
 /* Style the footer */
 .footer {
@@ -78,28 +78,39 @@ body {
     <h2>Learn Python with Bìu and friends</h2>
   </div>
   
-  <div class="left" style="background-color:pink;">
-  <h3>Lectures</h3>
+  <div class="left" style="background-color:#FBBEDF;">
+  <h3>Table of Contents</h3>
   <ul>
-  <li><a href = "">Introduction to Python Programming</a></li>
+  <li><a href = "">1. What is String in Python?</a></li>
   <li><a href = "">Variables and Operators</a></li>
   <li><a href = "">Functions</a></li>
+  <li><a href = "">Functions and Modules</a></li>
+  <li><a href = "">Creating and Importing Modules</a></li>
+  
   </ul>
 
   </div>
 
-<div class="middle" style="background-color:lightpink;">
-  <h1 align="center">Lecture 3: Variables and Operators</h1>  
-  <h4>BASIC DATA TYPES (REVIEW)</h4>
-    <ol>
-        <li>Integer (int) and float (float) - an integer or a real number in mathematics</li>
-        <li>String (str) - sequences of character data</li>
-        <li>Boolean (bool)- truth values (True or False)</li>
-    </ol>
+<div class="middle" style="background-color:#FDCFDF;">
+  <h1 align="center">Lecture 6: Strings</h1>  
+    <h3>1. What is String in Python?</h3>
+    <p>A string is a sequence of characters.</p>
 
+    <p>A character is simply a symbol. For example, the English language has 26 characters.</p>
+
+    <p>Computers do not deal with characters, they deal with numbers (binary). Even though you may see characters on your screen, internally it is stored and manipulated as a combination of 0s and 1s.
+    </p>
+    <p>This conversion of character to a number is called encoding, and the reverse process is decoding. ASCII and Unicode are some of the popular encodings used.
+    </p>
+    <p>In Python, a string is a sequence of Unicode characters. Unicode was introduced to include every character in all languages and bring uniformity in encoding. You can learn about Unicode from Python Unicode.    
+    </p>
+
+    <h3>How to create a string in Python?</h3>
+    <p>Strings can be created by enclosing characters inside a single quote or double-quotes. Even triple quotes can be used in Python but generally used to represent multiline strings and docstrings.</p>
+    
 </div>  
-  <div class="right" style="background-color:pink;">
-    <h3>Section</h3>
+  <div class="right" style="background-color:#FBBEDF;">
+    <!--<h3>Section</h3>
     <ol>
       <li><a href = "">BASIC DATA TYPES</a></li>
       <li><a href = "">TYPE CONVERSION</a></li>
@@ -109,7 +120,7 @@ body {
       <li><a href = "">OPERATORS</a></li>
       <li><a href = "">ORDER OF OPERATIONS</a></li>
     </ol>
-  </div>
+  </div> -->
 
   <!-- <div class="footer">
     <p>Footer</p>
