@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <style>
 * {
   box-sizing: border-box;
@@ -13,7 +14,7 @@ body {
 /* Style the header */
 .header {
   grid-area: header;
-  background-color:#BCE6EB;
+  background-color:#FFC7C7;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -38,6 +39,7 @@ body {
 /* Style the left column */
 .left {
   grid-area: left;
+  color: #233567;
 }
 
 /* Style the middle column */
@@ -69,29 +71,76 @@ body {
       'footer footer footer footer footer footer';
   }
 }
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #233567;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
 
 <div class="grid-container">
   <div class="header">
-    <h2>Learn Python with Bìu and friends</h2>
+    <h2>Learn Python with Bìu and friends &#128512;</h2>
   </div>
   
-  <div class="left" style="background-color:#FBBEDF;">
+  <div class="left" style="background-color:#FFE2E2;">
   <h3>Table of Contents</h3>
-  <ul>
-  <li><a href = "">1. What is String in Python?</a></li>
-  <li><a href = "">Variables and Operators</a></li>
-  <li><a href = "">Functions</a></li>
-  <li><a href = "">Functions and Modules</a></li>
-  <li><a href = "">Creating and Importing Modules</a></li>
-  
-  </ul>
+  <ol>
+  <li><a href = "">What is String in Python?</a></li>
+  <li><a href = "">How to create a string in Python?</a></li>
+  <li><a href = "">How to access characters in a string?</a></li>
+  <li><a href = "">How to change or delete a string?</a></li>
+  <li><a href = "">Python String Operations</a>
+    <ul>
+        <li>Concatenation of Two or More Strings</li>
+        <li>Iterating Through a string</li>
+        <li>String Membership Test</li>
+        <li>Built-in functions to Work with Python</li>
+    </ul>
+  </li>
+  <li>Python String Formatting
+      <ul>
+          <li>Escape Sequence</li>
+          <li>Raw String to ignore escape sequence</li>
+          <li>The format() Method for Formatting Strings</li>
+          <li>Old style formatting</li>
+      </ul>
+  </li>
+  <li>Common Python String Methods</li>
+  </ol>
 
+  <h3>Next lecture</h3>
+
+  <h3>Previous lecture</h3>
+
+  <input type="search"><br>
+  <input type="submit" value = "Search">
+
+  
   </div>
 
-<div class="middle" style="background-color:#FDCFDF;">
+<div class="middle" style="background-color:#F6F6F6;">
   <h1 align="center">Lecture 6: Strings</h1>  
     <h3>1. What is String in Python?</h3>
     <p>A string is a sequence of characters.</p>
@@ -107,7 +156,12 @@ body {
 
     <h3>How to create a string in Python?</h3>
     <p>Strings can be created by enclosing characters inside a single quote or double-quotes. Even triple quotes can be used in Python but generally used to represent multiline strings and docstrings.</p>
-    
+    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fanother-godel%2Fbiuandfriends%2Fblob%2Fmain%2Fcode%2FString%2Fstring1.py&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on"></script>
+    <p>When you run the program, the output will be:</p>
+    <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fanother-godel%2Fbiuandfriends%2Fblob%2Fmain%2Fcode%2FString%2Fstring1-out.py&style=github&showBorder=on&showLineNumbers=on&showFileMeta=on"></script>
+
+
+
 </div>  
   <div class="right" style="background-color:#FBBEDF;">
     <!--<h3>Section</h3>
